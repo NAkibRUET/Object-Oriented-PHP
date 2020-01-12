@@ -1,5 +1,6 @@
 <?php
     include 'inc/autoload.inc.php';
+    include 'newClass.php';
 ?>
 <html>
     <head>
@@ -8,12 +9,13 @@
     <body>
         <div>Nakib Hossain</div>
         <?php
-            //$obj = new derived(); // The Paranthesis are not important here because there is no Contructor here
+            $obj = new derived(); // The Paranthesis are not important here because there is no Contructor here
             //echo $obj->showGender();
-        
-            //$p1 = new Person(); // The Paranthesis are not important here because there is no Contructor here
-            //$p1->setPerson("Nakib",23,"Male");
-            //echo $p1->showPersonInfo();
+            echo NewClass::constant;
+            echo $obj->showStatic();
+            $p1 = new Person(); // The Paranthesis are not important here because there is no Contructor here
+            $p1->setPerson("Nakib",23,"Male");
+            echo $p1->showPersonInfo();
             
             $p2 = new Person("Mr X", 24, "Male"); // Without Paranthesis it will give an erro, because constructor exists
             echo $p2->showPersonInfo();

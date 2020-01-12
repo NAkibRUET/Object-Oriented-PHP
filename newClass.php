@@ -5,10 +5,15 @@
         public function information(){
             echo "Nothing";
         }
+        public static $staticVar = "Static";
+        const constant = "This is a const";
     }
     class derived extends NewClass{
         public function showGender(){
             return $this->gender;
+        }
+        public function showStatic(){
+            return parent::$staticVar; // Extending from parent class. that's why 'parent::'
         }
     }
     $object = new NewClass;
@@ -33,7 +38,7 @@
     /* Constructor and Destructor are methods. Constructors run right before we create an object.
     Destructors Right after we are done creating an object.  */
 
-    /*
+    
     class PersonX{
         private $name;
         private $age;
@@ -51,7 +56,7 @@
         public function __destruct(){ // Destructor Destroys an instance/ object.
             echo "Destroyed"; 
         }
-    }*/
+    }
     /* Stattic Properties and Methods. They can be directly called without creating any instances of the class */
     class PersonY{
         private $name;
