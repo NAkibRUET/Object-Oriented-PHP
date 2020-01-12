@@ -33,6 +33,7 @@
     /* Constructor and Destructor are methods. Constructors run right before we create an object.
     Destructors Right after we are done creating an object.  */
 
+    /*
     class PersonX{
         private $name;
         private $age;
@@ -50,7 +51,7 @@
         public function __destruct(){ // Destructor Destroys an instance/ object.
             echo "Destroyed"; 
         }
-    }
+    }*/
     /* Stattic Properties and Methods. They can be directly called without creating any instances of the class */
     class PersonY{
         private $name;
