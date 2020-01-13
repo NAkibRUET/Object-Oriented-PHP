@@ -26,6 +26,10 @@
 
             //$p3 = new PersonY("A",12,"Male");
             //echo $p3->printStatic();
+
+            /* Abstract Class Example */
+            $buyProduct = new buyProduct();
+            echo $buyProduct->getPayment();
         ?>
     </body>
 </html>
