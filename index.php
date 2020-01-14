@@ -1,14 +1,15 @@
 <?php
     include 'inc/autoload.inc.php';
     include 'newClass.php';
+
 ?>
 <html>
     <head>
         <title>OOP PHP</title>
     </head>
     <body>
-        <div>Nakib Hossain</div>
         <?php
+            /*
             $obj = new derived(); // The Paranthesis are not important here because there is no Contructor here
             //echo $obj->showGender();
             echo NewClass::constant;
@@ -27,7 +28,7 @@
             //$p3 = new PersonY("A",12,"Male");
             //echo $p3->printStatic();
 
-            /* Abstract Class Example */
+            // Abstract Class Example 
             $buyProduct = new buyProduct();
             echo $buyProduct->getPayment();
 
@@ -40,7 +41,16 @@
                     echo "\nHello World";
                 }
             };
+            
             $newObj->func();
+            */
+            
+            $user = new dboperations();
+            $user->users();
+            $user->getusers('Nakib');
+
+            $user->setusers('Adil','Kushtia','01630726372');
+
         ?>
     </body>
 </html>

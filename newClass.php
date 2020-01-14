@@ -17,7 +17,7 @@
         }
     }
     $object = new NewClass;
-    var_dump($object);
+    //var_dump($object);
 
     class Person{
         private $name;
