@@ -30,6 +30,17 @@
             /* Abstract Class Example */
             $buyProduct = new buyProduct();
             echo $buyProduct->getPayment();
+
+
+            //Anonymous Class
+            // The class is being free up from memory as soon as executed.
+            // We use it in case we need a class that won't be reused.
+            $newObj = new class(){ // Here it is important to name it "class", you cannot name it freely e.g "newClass", it will give an error
+                public function func(){
+                    echo "\nHello World";
+                }
+            };
+            $newObj->func();
         ?>
     </body>
 </html>
